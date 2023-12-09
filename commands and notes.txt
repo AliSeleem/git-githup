@@ -1,5 +1,5 @@
 link of the video in youtube[https://www.youtube.com/watch?v=fDkR0TDR9dI]
-
+note that all this commands written in [Git Bash] which you download in your local machine
 
 git config --global user.name "ziad" [to sing in your name]
 
