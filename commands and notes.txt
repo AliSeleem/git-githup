@@ -1,0 +1,93 @@
+link of the video in youtube[https://www.youtube.com/watch?v=fDkR0TDR9dI]
+
+
+git config --global user.name "ziad" [to sing in your name]
+
+git config --global user.email " "  [to sing in your gmail]
+
+git config --list [to know the information you enter]
+
+
+if you write [git] will give you all information about commands
+
+write [clear] to clear the window
+
+
+[ls] all files he can see
+
+make new repositry [git init 'repositry name']   (.git) انشئ مستودع بداخله ملف 
+this file will be hidden file and to see hidden files use[ls -a]
+
+[cd] to enter to files
+
+
+[git status] to give you the status of the git 
+
+
+create file in the repositry [touch 'file name .extantion'] like [touch index.html]
+
+now i create a file but did't make traking or making commit 
+
+
+two steps to commit the file 
+1-making it in the staging area [git add file name ]like:[git add index.html]
+2-making commit to make all the files in the staging area in my repositry [git commit -m'write explain why i make this commit ']
+like [git commit -m 'create index file']
+
+
+to know the changes happens in the repositry [git log]
+----------
+example 
+touch style.css
+touch motion.js
+
+git add style.css motion.js
+
+git commit -m 'creating  css and js files'
+
+
+--
+if you change in thes files using like VScode and you want to modify them and add this changes to the original repositry 
+the same two steps 
+1-making it in the staging area [git add file name ]like [git add index.html style.css motion.js]
+2-making commit to make all the files in the staging area in my repositry [git commit -m'write explain why i make this commit ']
+like [git commit -m 'modifing the files']
+----
+
+now i have modify in the folders if i want to return to the previous state take the commint id and write [git checkout commit id]
+commit id :you will find it if you write [git log] 
+
+
+------
+to know the branches [git branch]
+create new branch[git branch tree1]
+to switch to another branch [git checkout tree1] now ihave a copy from the branch master and modify in it as i want
+
+to merge the new branch with the master branch[all the changes in the copyed branch will be added to the master branch]
+git merge 'name of the copyed branch' like  [git merge tree1]
+
+
+------------
+to link remote repositry in git hub website and your local repositry in your computer
+
+first check if there is a linked repo between the local and remote or not [git remote -v]
+
+link the repo[git remote add [name of link repo][link from remote repo] ]
+like [git remote add origin https://github.com/ZiadAdelKhalifa/testing.git]
+
+-----
+after link remote and local repo to upload the files to the remote repo from local machine
+git push -u [name_of_repo branch_i_am_in] [name of the branch] like:[git push -u orgin master] 
+
+to make someone else modify in the repo in githup :
+go to setting ->collabratores->add people ->write their emails
+
+--
+to download the repo in your local machine if not existed:
+[git pull [name of link repo] [branch name to download the repo in]] like [git pull origin master]  
+
+--
+finaly you can make fork for any repo in githup and make pull to be in your local machine 
+and you have two option when you fork the repo 
+1-modify it in the copyed repo directly then you can merge it to the original repo directly
+2-make new branch first then modify it if you want to merge it first you should merge it in the copyed repo in your account then merge it in the original account you make fork from it [preferable]
